@@ -17,7 +17,7 @@ import os #new
 BASE_DIR = Path(__file__).resolve().parent.parent
 BASE_DIR2 = os.path.dirname(os.path.dirname(os.path.abspath(__file__))) #new
 TEMPLATE_DIR= os.path.join(BASE_DIR2,'templates') #new for adding html file
-STATIC_DIR=os.path.join(BASE_DIR2,'static')
+STATIC_ROOT=os.path.join(BASE_DIR2,'static')
 
 
 # Quick-start development settings - unsuitable for production
@@ -123,7 +123,7 @@ USE_TZ = True
 STATIC_URL = 'static/'
 
 STATICFILES_DIRS = [  #new
-    STATIC_DIR,
+    STATIC_ROOT,
 ]
 
 # Default primary key field type
